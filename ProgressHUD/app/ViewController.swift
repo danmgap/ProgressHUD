@@ -212,7 +212,9 @@ extension ViewController {
 
 		if (indexPath.section == 2)	{
 			ProgressHUD.animationType = animations[indexPath.row]
-			ProgressHUD.show(status)
+            ProgressHUD.colorAnimation = .white
+            ProgressHUD.colorHUD = .black.withAlphaComponent(0.6)
+			ProgressHUD.show(status, interaction: true)
 		}
 
 		if (indexPath.section == 3) {
